@@ -1,11 +1,63 @@
-import Bleed from 'nextra-theme-docs/bleed'
+# Running the API Locally
 
-# Nextra
+### Setting up a Virtual Environment
 
-**Nextra** is a [Next.js](https://nextjs.org) based static site generator.
+The commands below might look a bit different for Windows
 
-It supports Markdown and React components ([MDX](/features/mdx)), automatically generated [sidebar and anchor links](/get-started#sidebar-and-anchor-links), file-system based routing, built-in syntax highlighting, image optimization, custom layouts, i18n, and all the features you love about Next.js.
+`python3 -m venv env`
 
-Here's what you will get in 1 minute:
+`source env/bin/activate`
 
-<Bleed>![Nextra Example](../public/demo.png)</Bleed>
+You should now see (env) in your terminal. If you do, run
+`pip install -r requirements.txt`
+Test if requirements are installed by running `python3 main.py`
+
+### Setting up a Local Postgres Database
+
+1. Download PgAdmin
+2. Go into Servers and right click PostgreSQL 14
+3. Create Database
+
+### Creating Database Columns
+
+Inside main.py, change the following line:
+
+```python
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("POSTGRES_URI")
+```
+
+into
+
+```python
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://postgres:<password_of_database>@localhost/<name_of_database>'
+```
+
+You can also change
+
+```python
+app.run(debug=False)
+```
+
+into
+
+```python
+app.run(debug=True)
+```
+
+In your terminal, run `python3`
+
+When the Python REPL is opened, run the following lines: **(these lines should be run everytime you make a change to the fields of a model)**
+
+```python
+from extensions import db
+from main import app
+with app.app_context():
+    db.create_all()
+```
+
+import Callout from 'nextra-theme-docs/callout'
+
+<Callout>
+  Verify that the database columns are working properly with Postman. Try
+  creating a new user and making a new post.
+</Callout>
