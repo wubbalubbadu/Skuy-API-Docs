@@ -4,4 +4,4 @@
 
 `POST` /api/comments
 
-`DELETE` /api/comments/\<int:post_id\>
+`DELETE` /api/comments/\<int:post_id\>?comment_id=\<comment_id\>
