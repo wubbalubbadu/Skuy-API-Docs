@@ -4,10 +4,14 @@ All API endpoints that are related to the interaction between the app and the us
 In order to access these endpoints, the user must include either the access token or the refresh token (depending
 on the endpoint) in the request header.
 
-**Example Header:**
+**Example Header**
 
 ```js
 {
     "Authorization": `Bearer ${accessToken_or_refreshToken}`
 }
 ```
+
+**Token Lifetimes**
+
+Access tokens will expire in 1 hour while refresh tokens expire in 12 months

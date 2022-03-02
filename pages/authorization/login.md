@@ -11,7 +11,7 @@
 }
 ```
 
-**Example Response on Success**
+**Success Response**
 
 ```json
 {

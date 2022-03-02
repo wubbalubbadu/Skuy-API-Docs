@@ -1,7 +1,7 @@
 {
   "index": "Get Started",
   "authorization": "Authorization",
-  "posts": "Posts",
-  "comments": "Commments",
+  "posts": "Posts Resource",
+  "comments": "Comments Resource",
   "commit": "Pushing Code"
 }
