@@ -12,6 +12,13 @@ You should now see (env) in your terminal. If you do, run
 `pip install -r requirements.txt`
 Test if requirements are installed by running `python3 main.py`
 
+import Callout from 'nextra-theme-docs/callout'
+
+<Callout type="warning" emoji="⚠️">
+  If you are running into errors installing pyscopg2 during the pip install, Try
+  ``` brew install postgresql ``` and then ```brew services start postgresql```
+</Callout>
+
 ### Setting up a Local Postgres Database
 
 1. Download PgAdmin
@@ -54,8 +61,6 @@ from main import app
 with app.app_context():
     db.create_all()
 ```
-
-import Callout from 'nextra-theme-docs/callout'
 
 <Callout>
   Verify that the database columns are working properly with Postman. Try
