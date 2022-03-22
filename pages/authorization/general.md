@@ -1,4 +1,4 @@
-### Making Requests
+# Making Requests
 
 All API endpoints that are related to the interaction between the app and the user are protected.
 In order to access these endpoints, the user must include either the access token or the refresh token (depending

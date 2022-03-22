@@ -1,4 +1,4 @@
-### Endpoints for Testing
+# Endpoints for Testing
 
 `GET` /api/users
 

@@ -1,4 +1,4 @@
-### Comment Properties
+# Comment Properties
 
 | Field        | Type     | Description                       |
 | ------------ | -------- | --------------------------------- |

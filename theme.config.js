@@ -19,6 +19,7 @@ export default {
       <meta name="description" content="Skuy API Documentation" />
       <meta name="og:description" content="Skuy API Documentation" />
       <meta name="og:title" content="Skuy API Docs" />
+      <meta name="title" content="Skuy API Docs" />
     </>
   ),
   search: true,

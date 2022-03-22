@@ -1,4 +1,4 @@
-### User Log In
+# User Log In
 
 `POST` /api/login
 

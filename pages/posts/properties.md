@@ -1,4 +1,4 @@
-### Post Properties
+# Post Properties
 
 | Field        | Type     | Description                   |
 | ------------ | -------- | ----------------------------- |

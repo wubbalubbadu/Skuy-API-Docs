@@ -1,4 +1,4 @@
-### User Registration
+# User Registration
 
 `POST` /api/register
 

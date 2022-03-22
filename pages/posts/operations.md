@@ -1,4 +1,4 @@
-### Operations on Posts
+# Operations on Posts
 
 **All endpoints below require an access token**
 

@@ -1,4 +1,4 @@
-### User Log Out
+# User Log Out
 
 `POST` /api/logout/access **Requires access token**
 

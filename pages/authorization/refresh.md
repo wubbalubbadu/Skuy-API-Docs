@@ -1,4 +1,4 @@
-### Refreshing an Access Token
+# Refreshing an Access Token
 
 `POST` /api/token/refresh **Requires refresh token**
 

@@ -1,4 +1,4 @@
-### Operations on Comments
+# Operations on Comments
 
 **All endpoints below require an access token**
 
