@@ -3,5 +3,6 @@
   "authorization": "Authorization",
   "posts": "Posts Resource",
   "comments": "Comments Resource",
+  "community": "Community Resource",
   "commit": "Pushing Code"
 }
