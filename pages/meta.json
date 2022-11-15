@@ -7,5 +7,6 @@
   "community": "Community Resource",
   "profile": "Profile Resource",
   "search": "Search Resource",
-  "commit": "Pushing Code"
+  "commit": "Pushing Code",
+  "deploy": "Deploy to Heroku"
 }
